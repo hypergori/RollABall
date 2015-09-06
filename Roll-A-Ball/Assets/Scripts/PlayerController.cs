@@ -30,15 +30,15 @@ public class PlayerController : MonoBehaviour {
 
 		if (gyroSupported) {
 			Vector3 v = gyo1.rotationRateUnbiased;
-			moveHorizontal = v.y * -1.0f;
-			moveVertical = v.x;
+			moveHorizontal = v.y ;
+			moveVertical = v.x*-1;
 		} else {
 			moveHorizontal = Input.GetAxis ("Horizontal");
 			moveVertical = Input.GetAxis ("Vertical");
 		}
 
 
-		rb.AddForce (new Vector3 (moveHorizontal, 0, moveVertical)*speed*-1);
+		rb.AddForce (new Vector3 (moveHorizontal, 0, moveVertical)*speed);
 	}
 
 	void OnTriggerEnter (Collider other) {
