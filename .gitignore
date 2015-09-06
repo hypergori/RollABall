@@ -46,7 +46,4 @@ Roll-A-Ball/Library/AnnotationManager
 # Unity files
 Library
 Temp
-*.pidb
-*.unityproj
-*.sln
-*.userprefs
+Build

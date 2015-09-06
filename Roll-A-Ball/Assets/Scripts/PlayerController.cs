@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 
-		rb.AddForce (new Vector3 (moveHorizontal, 0, moveVertical)*speed);
+		rb.AddForce (new Vector3 (moveHorizontal, 0, moveVertical)*speed*-1);
 	}
 
 	void OnTriggerEnter (Collider other) {
